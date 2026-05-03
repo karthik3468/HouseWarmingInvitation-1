@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="House Warming and Satyanarayana Swamy Vratham invitation hosted by Kotha Purna Chandra Rao and Kotha Sita Lakshmi." />
+  <title>Kotha Family | House Warming Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;500;600;700;800&family=Cinzel:wght@500;600;700&family=Great+Vibes&family=Noto+Serif+Telugu:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="is-locked">
+  <div class="intro" id="intro" aria-label="Open invitation">
+    <div class="intro__frame" aria-hidden="true"></div>
+    <div class="intro__content">
+      <p class="eyebrow">&#3093;&#3146;&#3108;&#3149;&#3108; &#3093;&#3137;&#3103;&#3137;&#3074;&#3116;&#3074;</p>
+      <h1>&#3128;&#3134;&#3110;&#3120; &#3078;&#3129;&#3149;&#3125;&#3134;&#3112;&#3074;</h1>
+      <p class="intro__copy">House Warming &amp; Satyanarayana Swamy Vratham</p>
+      <button class="btn btn--primary" id="openInvitation" type="button">
+        Open Invitation
+      </button>
+    </div>
+  </div>
+
+  <canvas class="confetti" id="confettiCanvas" aria-hidden="true"></canvas>
+  <audio id="bgMusic" preload="auto" loop></audio>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">
+        <span class="brand__mark">&#3093;</span>
+        <span>
+          <strong>&#3093;&#3146;&#3108;&#3149;&#3108; &#3093;&#3137;&#3103;&#3137;&#3074;&#3116;&#3074;</strong>
+          <small>Kotha Family</small>
+        </span>
+      </a>
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav__links" id="navLinks">
+        <a href="#events">Events</a>
+        <a href="#countdown">Countdown</a>
+        <a href="#location">&#3117;&#3147;&#3100;&#3112;&#3134;&#3122;&#3137;</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#message">Invitation</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Invitation hero">
+      <div class="hero__media" data-parallax></div>
+      <div class="hero__veil"></div>
+      <div class="spark-field" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i>
+      </div>
+      <div class="hero__content reveal">
+        <p class="eyebrow">&#3118;&#3134; &#3079;&#3074;&#3103;&#3135; &#3125;&#3143;&#3105;&#3137;&#3093;&#3093;&#3137;
+          &#3128;&#3149;&#3125;&#3134;&#3095;&#3108;&#3074;</p>
+        <h1>
+          <span>You&rsquo;re Invited</span>
+          <strong>&#3095;&#3139;&#3129; &#3114;&#3149;&#3120;&#3125;&#3143;&#3126;&#3074;</strong>
+        </h1>
+        <p class="hero__lead">
+          Join us for a sacred evening of new beginnings, temple blessings,
+          Satyanarayana Swamy Vratham, temple blessings, and Bhojanalu with family.
+        </p>
+        <div class="host-line" aria-label="Hosts">
+          <span>&#3093;&#3146;&#3108;&#3149;&#3108; &#3114;&#3138;&#3120;&#3149;&#3107;
+            &#3098;&#3074;&#3110;&#3149;&#3120; &#3120;&#3134;&#3125;&#3137;</span>
+          <em>&amp;</em>
+          <span>&#3093;&#3146;&#3108;&#3149;&#3108; &#3128;&#3136;&#3108;
+            &#3122;&#3093;&#3149;&#3127;&#3149;&#3118;&#3135;</span>
+        </div>
+        <p class="host-caption">Kotha Purna Chandra Rao &amp; Kotha Sita Lakshmi</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#events">View Ceremony</a>
+          <a class="btn btn--ghost" href="https://maps.app.goo.gl/LdvfGQ3KJbN5LLx17" target="_blank" rel="noreferrer">
+            Bhojanalu Location
+          </a>
+          <button class="icon-btn" id="musicToggle" type="button" aria-label="Play Inkem Inkem Kaavaale"
+            title="Play music">
+            <span class="music-bars" aria-hidden="true"><b></b><b></b><b></b></span>
+          </button>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#events" aria-label="Scroll to events">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="welcome section reveal" aria-label="Welcome note">
+      <div class="container welcome__inner">
+        <p class="eyebrow">&#3128;&#3134;&#3110;&#3120; &#3078;&#3129;&#3149;&#3125;&#3134;&#3112;&#3074;</p>
+        <h2>&#3118;&#3136; &#3120;&#3134;&#3093; &#3118;&#3134; &#3125;&#3143;&#3105;&#3137;&#3093;&#3093;&#3137;
+          &#3118;&#3120;&#3135;&#3074;&#3108; &#3126;&#3147;&#3117;&#3112;&#3137;
+          &#3098;&#3143;&#3093;&#3138;&#3120;&#3149;&#3098;&#3137;&#3112;&#3137;&#46;</h2>
+        <p>
+          With devotion and happiness, we invite you to bless our home and join
+          the Satyanarayana Swamy Vratham at Sri Ramulavari Gudilo.
+        </p>
+      </div>
+    </section>
+
+    <section class="events section" id="events" aria-label="Event details">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Ceremony Details</p>
+          <h2>Two Auspicious Days</h2>
+        </div>
+        <div class="event-grid">
+          <article class="event-card event-card--home reveal tilt-card">
+            <div class="event-card__top">
+              <span class="event-card__number">01</span>
+              <div class="event-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M7 24 24 10l17 14v16a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2Z" />
+                  <path d="M18 42V28h12v14" />
+                  <path d="M14 24h20" />
+                </svg>
+              </div>
+            </div>
+            <p class="event-card__telugu">&#3095;&#3139;&#3129; &#3114;&#3149;&#3120;&#3125;&#3143;&#3126;&#3074;</p>
+            <h3>House Warming</h3>
+            <div class="event-meta">
+              <span>08 May 2026</span>
+              <span>Friday</span>
+              <span>7:30 PM</span>
+            </div>
+          </article>
+
+          <article class="event-card event-card--vratham reveal tilt-card">
+            <div class="event-card__top">
+              <span class="event-card__number">02</span>
+              <div class="event-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M24 7v6" />
+                  <path d="M15 18h18" />
+                  <path d="M18 18 16 36h16l-2-18" />
+                  <path d="M14 36h20" />
+                  <path d="M18 26h12" />
+                  <path d="M10 40h28" />
+                  <path d="M11 17c2-4 5-6 9-6" />
+                  <path d="M37 17c-2-4-5-6-9-6" />
+                </svg>
+              </div>
+            </div>
+            <p class="event-card__telugu">&#3128;&#3108;&#3149;&#3119;&#3112;&#3134;&#3120;&#3134;&#3119;&#3107;
+              &#3128;&#3149;&#3125;&#3134;&#3118;&#3135; &#3125;&#3149;&#3120;&#3108;&#3074;</p>
+            <h3>Satyanarayana<br />Swamy Vratham</h3>
+            <div class="event-meta">
+              <span>09 May 2026</span>
+              <span>Saturday</span>
+              <span>&#3118;&#3111;&#3149;&#3119;&#3134;&#3129;&#3149;&#3112;
+                &#3117;&#3147;&#3100;&#3112;&#3134;&#3122;&#3137;</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-section section" id="countdown" aria-label="Countdown">
+      <div class="container">
+        <div class="countdown-layout reveal">
+          <div>
+            <p class="eyebrow">Live Countdown</p>
+            <h2>08 May 2026, 7:30 PM</h2>
+            <p id="countdownStatus">
+              Counting down to the House Warming ceremony.
+            </p>
+          </div>
+          <div class="countdown" id="countdownTimer" role="timer" aria-live="polite">
+            <div><strong data-value="days">00</strong><span>Days</span></div>
+            <div><strong data-value="hours">00</strong><span>Hours</span></div>
+            <div><strong data-value="minutes">00</strong><span>Minutes</span></div>
+            <div><strong data-value="seconds">00</strong><span>Seconds</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location section" id="location" aria-label="Bhojanalu location">
+      <div class="container location__grid">
+        <div class="location__content reveal">
+          <p class="eyebrow">&#3117;&#3147;&#3100;&#3112;&#3134;&#3122;&#3137; Location</p>
+          <h2>&#3126;&#3149;&#3120;&#3136; &#3120;&#3134;&#3118;&#3137;&#3122; &#3125;&#3134;&#3120;&#3135;
+            &#3095;&#3137;&#3105;&#3135;&#3122;&#3147;</h2>
+          <p>
+            Bhojanalu will be served at Ramulavari Gudilo after the Satyanarayana Swamy Vratham
+            festivities. Use the button below for the exact shared Maps location.
+          </p>
+          <div class="location__actions">
+            <a class="btn btn--primary" href="https://maps.app.goo.gl/LdvfGQ3KJbN5LLx17" target="_blank"
+              rel="noreferrer">
+              Open Bhojanalu Location
+            </a>
+            <button class="btn btn--ghost" id="copyLocation" type="button">
+              Copy Location Link
+            </button>
+          </div>
+        </div>
+        <div class="map-panel reveal">
+          <iframe title="Map view for Ramulavari Gudilo"
+            src="https://www.google.com/maps?q=Ramulavari%20Gudilo&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery" aria-label="Gallery">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Realistic Glimpses</p>
+          <h2>Light, Blessings &amp; Bhojanalu</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal">
+            <img src="assets/hero-realistic.png" alt="Realistic decorated house entrance with diyas" />
+            <figcaption>
+              <span>&#3095;&#3139;&#3129; &#3114;&#3149;&#3120;&#3125;&#3143;&#3126;&#3074;</span>
+              New Home Blessings
+            </figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/satyanarayana-vratham-realistic.png"
+              alt="Satyanarayana Swamy Vratham pooja setup with lamps and flowers" />
+            <figcaption>
+              <span>&#3128;&#3108;&#3149;&#3119;&#3112;&#3134;&#3120;&#3134;&#3119;&#3107;
+                &#3128;&#3149;&#3125;&#3134;&#3118;&#3135; &#3125;&#3149;&#3120;&#3108;&#3074;</span>
+              Satyanarayana Swamy Vratham
+            </figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/bhojanalu-realistic.png" alt="Traditional Bhojanalu lunch on banana leaves" />
+            <figcaption>
+              <span>&#3117;&#3147;&#3100;&#3112;&#3134;&#3122;&#3137;</span>
+              Afternoon Lunch
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="message section" id="message" aria-label="Invitation message">
+      <div class="container message__inner reveal">
+        <p class="eyebrow">&#3078;&#3126;&#3136;&#3120;&#3149;&#3125;&#3134;&#3110;&#3134;&#3122;&#3137;</p>
+        <h2>We request your presence with family.</h2>
+        <p class="message__telugu">
+          &#3118;&#3136; &#3120;&#3134;&#3093; &#3118;&#3134; &#3125;&#3143;&#3105;&#3137;&#3093;&#3093;&#3137;
+          &#3118;&#3120;&#3135;&#3074;&#3108; &#3126;&#3147;&#3117;&#3112;&#3137;
+          &#3098;&#3143;&#3093;&#3138;&#3120;&#3149;&#3098;&#3137;&#3112;&#3137;&#46;
+        </p>
+        <p>
+          Please join us, bless our new beginning, and share the happiness of
+          Satyanarayana Swamy Vratham and Bhojanalu at the temple.
+        </p>
+        <button class="btn btn--primary" id="saveDate" type="button">Save House Warming Date</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__lamp" aria-hidden="true"></div>
+    <p>&#3114;&#3149;&#3120;&#3143;&#3118;&#3108;&#3147;</p>
+    <h2>&#3093;&#3146;&#3108;&#3149;&#3108; &#3114;&#3138;&#3120;&#3149;&#3107; &#3098;&#3074;&#3110;&#3149;&#3120;
+      &#3120;&#3134;&#3125;&#3137; &amp; &#3093;&#3146;&#3108;&#3149;&#3108; &#3128;&#3136;&#3108;
+      &#3122;&#3093;&#3149;&#3127;&#3149;&#3118;&#3135;</h2>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
